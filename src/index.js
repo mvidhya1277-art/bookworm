@@ -9,6 +9,10 @@ import { connectDB } from "./lib/db.js";
 const app=express();
 const PORT=process.env.PORT|| 3000;
 
+router.get("/", async (req, res) => {
+  res.json([]);
+});
+
 job.start();
 app.use(express.json());  
 app.use(cors());

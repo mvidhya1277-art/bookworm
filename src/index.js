@@ -18,6 +18,6 @@ app.use("/api/books",bookRoutes);
 
 
 app.listen(PORT,()=>{
-    console.log(`Server is running on the port`);
+    console.log(`Server is running on the port ${PORT}`);
     connectDB();
 });
